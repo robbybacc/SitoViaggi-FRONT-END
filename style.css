@@ -1,0 +1,245 @@
+
+
+
+:root{
+    --p: rgba(238,174,202,1);
+    
+    --l: rgba(231, 198, 255, 0.382);
+    
+    --b: rgb(200, 182, 255);
+    --a: rgb(184, 192, 255);
+    
+    --c: rgba(187, 208, 255, 0.377);
+    
+    --w: rgb(251, 241, 241);
+    --v: rgb(179, 136, 235);
+    --nv: radial-gradient(circle, rgba(238,174,
+    202,1) 0%, rgb(200, 182, 255) 80%,rgb(184, 192, 
+    255) 100%);
+    --op: radial-gradient(circle, rgb(184, 192, 
+    255) 0%, rgb(200, 182, 255) 80%, rgba(238,174,
+    202,1) 100%);
+    
+}
+
+
+.bg-p{
+    background-color: var(--p) !important;
+}
+
+.bg-l{
+    background-color: var(--l) !important;
+}
+
+.bg-b{
+    background-color: var(--b) !important;
+}
+
+.bg-a{
+    background-color: var(--a) !important;
+}
+
+.bg-c{
+    background-color: var(--c) !important;
+}
+
+.text-w{
+    color: var(--w) !important;
+}
+
+.text-b{
+    color: var(--b) !important;
+}
+
+.text-a{
+    color: var(--a) !important;
+}
+
+.text-v{
+    color: var(--v) !important;
+}
+
+.navbar{
+    /* background: rgb(238,174,202); */
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgb(200, 182, 255) 80%,rgb(184, 192, 255) 100%);
+}
+
+.radial-gradient{
+    /* background:rgb(184, 192, 255); */
+    background: radial-gradient(circle, rgb(184, 192, 255) 0%, rgb(200, 182, 255) 80%, rgba(238,174,202,1) 100%);
+}
+
+
+.border-nav-l{
+    border-bottom: 3px solid var(--l);
+}
+
+.border-nav-c{
+    border-bottom: 3px solid var(--c);
+}
+
+
+#containerNav{
+    transition: 0.5s;
+}
+
+
+.logo{
+    width: 115px;
+    height: 80px;
+}
+
+
+.header{
+    background-image: url(/media/sfondosito.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.title{
+    text-shadow: 2px 2px 5px black;
+}
+
+.titolo-presto{
+    width: 800px;
+    
+}
+
+
+.titolo-numeri{
+    font-style: italic;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+
+.number{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.swiper {
+    height: 450px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 100%;
+}
+
+
+.chisiamo-title{
+    margin-top: 110px;
+}
+
+
+.review-card{
+    height: 60%;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.titolo-annunci{
+    padding-top: 90px;
+}
+
+.ann-header{
+    height: 50vh;
+    /* width: 90vw; */
+    background-image: linear-gradient(rgba(23,23,23,0.6), rgba(23,23,23,0.8)), url(./media/Annunci-320x307.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: var(--nv) !important;
+    background-color: var(--op) !important;
+    border: 1px solid var(--c) !important;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+
+/*card annunci*/
+.ann-card{
+    height: 200px;
+    width: 30%;
+    border: 2px solid var(--l);
+    border-radius: 20px;
+    color: white;
+    background-color: var(--b);
+    box-shadow: 2px 2px 4px black;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+
+#circle{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 2px dashed black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#opener{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    z-index: 10;
+    background-color: var(--b);
+    
+}
+
+.moved{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    
+}
+
+.allineamento-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .ann-card{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
